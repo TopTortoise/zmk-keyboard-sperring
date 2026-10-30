@@ -19,3 +19,9 @@
   #
 board: [ "nice_nano_v2" ]
 shield: [ "sperring_left", "sperring_right" ]
+
+include: 
+  - board: nice_nano_v2
+    shield: sperring_left
+  - board: nice_nano_v2
+    shield: sperring_right
