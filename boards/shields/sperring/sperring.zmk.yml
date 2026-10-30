@@ -4,18 +4,22 @@
 
 file_format: "1"
 id: sperring
-name: sperring
-type: board
-arch: arm
+name: Sperring
+type: shield
+#arch: arm
 
 # Set this to a URL that documents the keyboard.
-url: https://example.com
+url: https://github.com/TopTortoise/zmk-keyboard-sperring
 
 # Add any features your keyboard supports here.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
+
+requires:
+  - [pro_micro]
+
 features:
   - keys
-  - studio  # Remove this line if your keyboard will not support ZMK Studio
+  #- studio  # Remove this line if your keyboard will not support ZMK Studio
 
 outputs:
   - usb
