@@ -14,8 +14,7 @@ url: https://github.com/TopTortoise/zmk-keyboard-sperring
 # Add any features your keyboard supports here.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 
-requires:
-  - [pro_micro]
+requires: [pro_micro]
 
 features:
   - keys
