@@ -20,5 +20,5 @@
 board: ["nice_nano"]
 shield: ["sperring"]
 include:
-  - board: nice_nano@1//zmk
-    shield: sperring
+  - board: sperring_left
+  - board: sperring_right
