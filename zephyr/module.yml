@@ -1,4 +1,4 @@
-name: zmk-config-sperring
+name: zmk-keyboard-sperring
 build:
   settings:
     board_root: .
