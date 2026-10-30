@@ -1,3 +1,5 @@
+
+#:schema: https://raw.githubusercontent.com/zmkfirmware/zmk/refs/heads/main/schema/hardware-metadata.schema.json
 # This file was generated from a template. Edit it to match your keyboard.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files
 # for instructions.
