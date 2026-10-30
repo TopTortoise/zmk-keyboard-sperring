@@ -44,13 +44,23 @@
         >;
 
         &kscan {
-    col-gpios =
-        <&pro_micro 19 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 18 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 15 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 14 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 16 GPIO_ACTIVE_HIGH>;
-};
+     row-gpios =
+            <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* row 6 -> 106 */
+            <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, /* row 5 -> 022 */
+            <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, /* row 4 -> 024 */
+            <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* row 3 -> 100 */
+            <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, /* row 2 -> 011 */
+            <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  /* row 1 -> 104 */
+
+        /* Ordered column 1 to column 6 */
+        col-gpios =
+            <&gpio0 31 GPIO_ACTIVE_HIGH>, /* col 1 -> 031 */
+            <&gpio0 29 GPIO_ACTIVE_HIGH>, /* col 2 -> 029 */
+            <&gpio0 2  GPIO_ACTIVE_HIGH>, /* col 3 -> 002 */
+            <&gpio1 15 GPIO_ACTIVE_HIGH>, /* col 4 -> 115 */
+            <&gpio1 13 GPIO_ACTIVE_HIGH>, /* col 5 -> 113 */
+            <&gpio1 11 GPIO_ACTIVE_HIGH>; /* col 6 -> 111 */
+    };
 
     
 };
